@@ -37,7 +37,32 @@
 
 int main() {
 
-    //--| YOUR CODE HERE
+    int Score = 0 ;
+    printf( "Please Enter you score : " ) ;
+    scanf( "%d",&Score) ;
+    if ( Score <= 0 ) {
+        printf( "Eror Try Again " ) ;
+    }
+    printf( "Grade : " ) ;
+    if( Score >= 80 ) {
+        printf( "A !" );
+    }else if ( Score >= 75 && Score < 80 ) {
+        printf( "B+ !" ) ;
+    }else if ( Score >= 70 && Score < 75 ) {
+        printf( "B !" ) ;
+    }else if ( Score >= 65 && Score < 70 ) {
+        printf( "C+ !" ) ;
+    }else if ( Score >= 60 && Score < 65 ) {
+        printf( "C !" ) ;
+    }else if ( Score >= 55 && Score < 60 ) {
+        printf( "D+ !") ;
+    }else if ( Score >= 50 && Score < 55 ) {
+        printf( "D !" ) ;
+    }else if  ( Score >= 44 && Score < 50 ) {
+        printf( "F !" ) ;
+    }else {
+        printf( " please enter number only." ) ;
+    }
 
     return 0 ;
 }//end main function
